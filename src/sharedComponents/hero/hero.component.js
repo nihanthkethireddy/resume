@@ -1,0 +1,28 @@
+import React, {Component} from 'react'
+import { heroStyles, imgStyles, textStyles, downloadStyles } from './hero.styles'
+// import heroImage from './hero_img.png'
+
+
+class Hero extends Component {
+    render () {
+        return <div {...heroStyles}>
+            {/* <div {...imgStyles}></div> */}
+            <div {...textStyles}>
+                <div>
+                    <i className={"fa fa-quote-left"}></i>
+                    <div>
+                        In my past experience, I’ve developed multiple Web Based and Mobile based good reputed projects. Projects like Cars.com, ShopStevie.com, Pickuptrucks.com, Auto.com and other Products like Brutus (a traffic model simulation) etc. I am progressive minded and in tune with new development in my field. I have proven to be effective in terms of communication and collaborative with strong problem-solving talents which let me achieve Employee of the Year for two consecutive years in my previous company.
+                    </div>
+                    <i className={"fa fa-quote-right"}></i>
+                </div>
+                <div {...downloadStyles}>Download Resume</div>
+            </div>
+            <div {...imgStyles}>
+                {/* <div></div> */}
+                {/* <img src={heroImage} /> */}
+            </div>
+        </div>
+    }
+}
+
+export {Hero}
