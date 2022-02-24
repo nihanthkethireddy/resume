@@ -5,7 +5,14 @@ let footerStyles = css({
     display: 'flex',
     flexDirection: 'column',
     ' div': {
-        padding: '20px'
+        padding: '20px',
+        ' i': {
+            transition: 'transform .2s',
+        ':hover': {
+            transform: 'scale(1.5)',
+            cursor: 'pointer'
+        }
+        }
     }
 })
 

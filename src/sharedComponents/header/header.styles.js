@@ -6,7 +6,10 @@ let headerStyles = css({
 
 let navStyles = css({
     backgroundColor: 'antiquewhite',
-    ' span': {
+    position: 'fixed',
+    zIndex: 1,
+    width: '100%',
+    ' a': {
         float: 'left',
         transition: 'transform .2s',
         display: 'block',
@@ -16,7 +19,8 @@ let navStyles = css({
         textDecoration: 'none',
         fontSize: '17px',
         ':hover': {
-            transform: 'scale(1.5)'
+            transform: 'scale(1.5)',
+            cursor: 'pointer'
         },
         '.icon': {
             display: 'none'
@@ -38,11 +42,14 @@ let navStyles = css({
     },
     '@media screen and (max-width: 600px)': {
         '.responsive': {
-            position: 'relative',
-            ' span': {
+            position: 'fixed',
+            top: '0',
+            zIndex: 1,
+            ' a': {
                 transition: 'none',
                 ':hover': {
                     transform: 'none',
+                    cursor: 'pointer',
                     backgroundColor: '#fe3301',
                     color: 'white'
                     

@@ -1,12 +1,9 @@
 import React, {Component} from 'react'
 import { heroStyles, imgStyles, textStyles, downloadStyles } from './hero.styles'
-// import heroImage from './hero_img.png'
-
 
 class Hero extends Component {
     render () {
-        return <div {...heroStyles}>
-            {/* <div {...imgStyles}></div> */}
+        return <div {...heroStyles} id={'home'}>
             <div {...textStyles}>
                 <div>
                     <i className={"fa fa-quote-left"}></i>
@@ -15,11 +12,9 @@ class Hero extends Component {
                     </div>
                     <i className={"fa fa-quote-right"}></i>
                 </div>
-                <div {...downloadStyles}>Download Resume</div>
+                <div {...downloadStyles} onClick={() => {return window.location.assign('/Resume_Nihanth_Reddy.pdf')}}>Resume</div>
             </div>
             <div {...imgStyles}>
-                {/* <div></div> */}
-                {/* <img src={heroImage} /> */}
             </div>
         </div>
     }

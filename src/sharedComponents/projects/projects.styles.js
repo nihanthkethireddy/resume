@@ -18,7 +18,8 @@ const cardStyles = css({
         margin: 'auto'
     },
     ':hover': {
-        boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)'
+        boxShadow: '0 8px 20px 0 rgba(0,0,0,0.8)',
+        cursor: 'pointer'
     }
 })
 
@@ -31,7 +32,7 @@ const containerStyles = css({
     display: 'flex',
     flexWrap: 'wrap',
     backgroundColor: 'antiquewhite',
-    padding: '35px',
+    padding: '90px 35px',
     justifyContent: 'space-evenly',
     '@media screen and (max-width: 720px)': {
         backgroundColor: 'white',

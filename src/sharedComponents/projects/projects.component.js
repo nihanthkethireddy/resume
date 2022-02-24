@@ -11,7 +11,7 @@ class Projects extends Component {
 
     renderProjects = (projects) => {
         return projects.map((pro) => {
-            return <div {...cardStyles}>
+            return <div {...cardStyles} onClick={() => pro.link ? window.open(pro.link) : ''}>
                 {(pro.name == 'Brutus' || pro.name == 'EBankart') ? 
                     <i className="fa fa-image"></i> : 
                     <img src={pro.icon} alt="Avatar" />}
@@ -26,32 +26,37 @@ class Projects extends Component {
     render() {
         const projects = [
             {
+                icon: noIconImg,
+                name: 'Brutus',
+                link: '',
+                description: 'A synthesized version of Traffic model (Company: Ramboll)'
+            },
+            {
                 icon: autoImg,
                 name: 'Auto',
-                description: 'Auto Description'
+                link: 'https://www.auto.com/',
+                description: 'Auto is a platform where users buy new/used cars (Company: American Cybersystems)'
             },
             {
                 icon: truckImg,
                 name: 'Pickup Trucks',
-                description: 'Pickup Trucks Description'
+                link: 'https://www.pickuptrucks.com/',
+                description: 'Auto is a platform where users buy new/used trucks (Company: American Cybersystems)'
             },
             {
                 icon: stevieImg,
                 name: 'Shop Stevie',
-                description: 'Shop Stevie Description'
-            },
-            {
-                icon: noIconImg,
-                name: 'Brutus',
-                description: 'Brutus Description'
+                link: 'https://shopstevie.com/',
+                description: 'A fashion E-Commerce Store (Company: American Cybersystems)'
             },
             {
                 icon: noIconImg,
                 name: 'EBankart',
-                description: 'Ebankart Description'
+                link: '',
+                description: 'A rewards program based on local store bills (Company: SCM Data)'
             }
         ]
-        return <div {...containerStyles}>
+        return <div {...containerStyles} id={'projects'}>
             {this.renderProjects(projects)}
         </div>
     }

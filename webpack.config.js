@@ -2,15 +2,25 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: 'development',
   entry: "./src/index.js",
   output: {
-    filename: "bundle.[hash].js",
+    filename: "assets/js/[name].[hash:8].js",
     path: path.resolve(__dirname, "dist"),
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html",
+      template: path.resolve(__dirname, "public/index.html"),
+      inject: true
     }),
   ],
   resolve: {
@@ -29,9 +39,9 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.png|svg|jpg|gif$/,
+        test: /\.png|svg|jpg|gif|pdf$/,
         use: ["file-loader"],
-      }, 
+      },
     ],
   },
 };

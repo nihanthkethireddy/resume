@@ -12,28 +12,36 @@ class Skills extends Component {
             'Typescript': 5,
             'React JS': 5,
             'Node JS': 5,
-            'SEO': 5,
-            'Performance Analysis': 5,
-            'Ruby on Rails': 5,
-            'C++': 5,
-            'AWS': 5,
-            'Azure': 5,
-            'Circle CI': 5,
+            'SEO': 3,
+            'Performance Audit': 3,
+            'Ruby on Rails': 1,
+            'C++': 3,
+            'AWS': 3,
+            'Azure': 3,
+            'Circle CI': 3,
             'Prismic': 5,
-            'Adobe Analytics': 5,
-            'Google Analytics': 5,
-            'Jenkins': 5,
+            'Typepad': 3,
+            'Adobe Analytics': 3,
+            'Google Analytics': 3,
+            'Jenkins': 3,
             'Graph QL': 5,
             'Mapbox GL': 5,
-            'Docker': 5,
+            'Docker': 3,
             'SQL': 5,
+            'React Native': 3,
+            'Android': 1,
+            'Razzle': 5,
+            'LightHouse': 3,
+            'Hotjar': 3,
+            'Zeplin': 3,
+            'Express': 5
         }
 
         return Object.keys(skills).map((skill) => <div {...skillsStyles(skills[skill])}>{skill}</div>)
     }
 
     render() {
-        return <div {...skillsContainerStyles}>{this.displaySkills()}</div>
+        return <div {...skillsContainerStyles} id={'skills'}>{this.displaySkills()}</div>
     }
 }
 

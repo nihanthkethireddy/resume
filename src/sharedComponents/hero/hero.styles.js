@@ -6,7 +6,7 @@ let heroStyles = css({
     backgroundColor: 'antiquewhite',
     flexWrap: 'wrap-reverse',
     position: 'relative',
-    // margin: '0px 76px',
+    padding: '50px 0px 0px 0px',
     justifyContent: 'space-around',
 })
 
@@ -42,7 +42,12 @@ let downloadStyles = css({
     backgroundColor: '#fe3301',
     color: 'white',
     padding: '15px !important',
-    marginBottom: '40px'
+    marginBottom: '40px',
+    transition: 'transform .2s',
+    ':hover': {
+        transform: 'scale(1.2)',
+        cursor: 'pointer'
+    },
 })
 
 let imgStyles = css({
