@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "assets/js/[name].[hash:8].js",
+    filename: "assets/js/[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   performance: {
