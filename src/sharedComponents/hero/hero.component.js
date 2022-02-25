@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import resume from './Resume_Nihanth_Reddy.pdf'
 import { heroStyles, imgStyles, textStyles, downloadStyles } from './hero.styles'
 
 class Hero extends Component {
@@ -12,7 +13,7 @@ class Hero extends Component {
                     </div>
                     <i className={"fa fa-quote-right"}></i>
                 </div>
-                <div {...downloadStyles} onClick={() => {return window.location.assign('/Resume_Nihanth_Reddy.pdf')}}>Resume</div>
+                <div {...downloadStyles} onClick={() => {return window.location.assign(resume)}}>Resume</div>
             </div>
             <div {...imgStyles}>
             </div>

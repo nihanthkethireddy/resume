@@ -1,47 +1,47 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
-
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "assets/js/[name].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.join(__dirname, '/dist'),
+    filename: 'bundle.js'
   },
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-  },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "public/index.html"),
-      inject: true
-    }),
-  ],
-  resolve: {
-    modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './public',
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
+        loader: 'babel-loader'
       },
       {
-        test: /\.css$/,
+        test: /\.(png|jpe?g|gif|pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      {
-        test: /\.png|svg|jpg|gif|pdf$/,
-        use: ["file-loader"],
-      },
-    ],
+    ]
   },
-};
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  resolve: {
+    extensions: ['.jsx', '.ts', '.js'],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    })
+  ]
+}
