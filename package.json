@@ -1,0 +1,50 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Nihanth Reddy's Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node index.js",
+    "start:dev": "webpack serve  --hot --open --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nihanthkethireddy/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nihanthkethireddy/resume/issues"
+  },
+  "homepage": "https://github.com/nihanthkethireddy/resume#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "glamor": "^2.20.40",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0",
+    "react": "^17.0.2",
+    "react-animations": "^1.0.0",
+    "react-anime": "^4.1.1",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-typist": "^2.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^6.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
