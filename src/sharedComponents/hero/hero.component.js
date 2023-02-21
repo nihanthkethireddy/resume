@@ -14,8 +14,8 @@ class Hero extends Component {
                     </div>
                     <i className={"fa fa-quote-right"}></i>
                 </div>
-                <div {...downloadStyles} onClick={() => {return window.location.assign(resumeDetailed)}}>Resume Detailed</div>
-                <div {...downloadStyles} onClick={() => {return window.location.assign(resumeOverview)}}>Resume Overview</div>
+                <div {...downloadStyles} onClick={() => {return window.location.assign(resumeDetailed)}}>Resume</div>
+                {/* <div {...downloadStyles} onClick={() => {return window.location.assign(resumeOverview)}}>Resume Overview</div> */}
             </div>
             <div {...imgStyles}>
             </div>
