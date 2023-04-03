@@ -1,16 +1,16 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import resumeDetailed from './Resume-Detailed.pdf'
 import resumeOverview from './Resume-Overview.pdf'
 import { heroStyles, imgStyles, textStyles, downloadStyles } from './hero.styles'
 
 class Hero extends Component {
-    render () {
+    render() {
         return <div {...heroStyles} id={'home'}>
             <div {...textStyles}>
                 <div>
                     <i className={"fa fa-quote-left"}></i>
                     <div>
-                        In my past experience, I’ve developed multiple Web Based and Mobile based good reputed projects. Projects like Cars.com, ShopStevie.com, Pickuptrucks.com, Auto.com and other Products like Brutus (a traffic model simulation) etc. I am progressive minded and in tune with new development in my field. I have proven to be effective in terms of communication and collaborative with strong problem-solving talents.
+                        Imagine having an experienced ReactJS and NodeJS Developer with over 8 years of professional experience working in the exciting world of E-Commerce!  He is a pro in developing web applications using HTML, CSS, JavaScript, React JS, and Redux architecture. He also has a wide range of expertise in testing frameworks, version control tools, and bug tracking tools. He has even worked with cloud technologies like AWS and CMS like Prismic and Typepad. In addition, he is well-versed in RESTful and SOAP web services, SQL, and stored procedures. With excellent communication and interpersonal skills, he works well as part of a team or individually. You don't want to miss out on having this skilled developer on your team!
                     </div>
                     <i className={"fa fa-quote-right"}></i>
                 </div>
@@ -23,4 +23,4 @@ class Hero extends Component {
     }
 }
 
-export {Hero}
+export { Hero }

@@ -36,7 +36,7 @@ class Footer extends Component {
                 </div>
             </div>
             <div {...copyrightStyles}>
-                <span><i class="fa fa-copyright"></i> All Rights Reserved | 2022</span>
+                <span><i class="fa fa-copyright"></i> All Rights Reserved | 2023</span>
             </div>
         </div>
     }

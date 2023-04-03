@@ -53,7 +53,13 @@ class Projects extends Component {
                 icon: noIconImg,
                 name: 'EBankart',
                 link: '',
-                description: 'A rewards program based on local store bills (Company: SCM Data)'
+                description: 'A rewards program based on local store bills (Company: NEW HORIZONS CYBERSOFT LTD)'
+            },
+            {
+                icon: noIconImg,
+                name: 'Tasker',
+                link: '',
+                description: 'An events and task tracker in an organization. (Company: NEW HORIZONS CYBERSOFT LTD)'
             }
         ]
         return <div {...containerStyles} id={'projects'}>
