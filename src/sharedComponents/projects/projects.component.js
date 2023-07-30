@@ -12,7 +12,7 @@ class Projects extends Component {
     renderProjects = (projects) => {
         return projects.map((pro) => {
             return <div {...cardStyles} onClick={() => pro.link ? window.open(pro.link) : ''}>
-                {(pro.name == 'Brutus' || pro.name == 'EBankart') ? 
+                {!pro.icon ? 
                     <i className="fa fa-image"></i> : 
                     <img src={pro.icon} alt="Avatar" />}
                 <div {...textStyles}>
@@ -26,49 +26,49 @@ class Projects extends Component {
     render() {
         const projects = [
             {
-                icon: noIconImg,
+                icon: '',
                 name: 'AMEX - One Amex',
                 link: '',
                 description: 'A cost efficient and high performant Consumer Servicing Tool (Company: Infosys)'
             },
             {
-                icon: noIconImg,
+                icon: '',
                 name: 'BoFA - Climate Risk',
                 link: '',
-                description: 'A project aiming towards Zero Finance Emission (Company: Infosys)'
+                description: 'A project addressing environmental concerns and aiming towards Zero Finance Emission (Company: Infosys)'
             },
             {
-                icon: noIconImg,
+                icon: '',
                 name: 'Brutus',
                 link: '',
-                description: 'A synthesized version of Traffic model (Company: Ramboll)'
+                description: 'A synthesized version of Traffic model that projects enviromental statistics and traffic dissipation (Company: Ramboll)'
             },
             {
                 icon: autoImg,
                 name: 'Auto',
                 link: 'https://www.auto.com/',
-                description: 'Auto is a platform where users buy new/used cars (Company: American Cybersystems)'
+                description: 'Auto is a platform where users buy new/used cars and the website also contains articles related to automotives (Company: American Cybersystems)'
             },
             {
                 icon: truckImg,
                 name: 'Pickup Trucks',
                 link: 'https://www.pickuptrucks.com/',
-                description: 'Auto is a platform where users buy new/used trucks (Company: American Cybersystems)'
+                description: 'Picktrucks is a platform where users buy new/used trucks and the website also contains articles related to trucks (Company: American Cybersystems)'
             },
             {
                 icon: stevieImg,
                 name: 'Shop Stevie',
                 link: 'https://shopstevie.com/',
-                description: 'A fashion E-Commerce Store (Company: American Cybersystems)'
+                description: 'A fashion E-Commerce Store which deals to clothing and accessories (Company: American Cybersystems)'
             },
             {
-                icon: noIconImg,
+                icon: '',
                 name: 'EBankart',
                 link: '',
-                description: 'A rewards program based on local store bills (Company: NEW HORIZONS CYBERSOFT LTD)'
+                description: 'A rewards program based on bills of any local store (Company: NEW HORIZONS CYBERSOFT LTD)'
             },
             {
-                icon: noIconImg,
+                icon: '',
                 name: 'Tasker',
                 link: '',
                 description: 'An events and task tracker in an organization. (Company: NEW HORIZONS CYBERSOFT LTD)'
