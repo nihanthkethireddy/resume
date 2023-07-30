@@ -27,6 +27,18 @@ class Projects extends Component {
         const projects = [
             {
                 icon: noIconImg,
+                name: 'AMEX - One Amex',
+                link: '',
+                description: 'A cost efficient and high performant Consumer Servicing Tool (Company: Infosys)'
+            },
+            {
+                icon: noIconImg,
+                name: 'BoFA - Climate Risk',
+                link: '',
+                description: 'A project aiming towards Zero Finance Emission (Company: Infosys)'
+            },
+            {
+                icon: noIconImg,
                 name: 'Brutus',
                 link: '',
                 description: 'A synthesized version of Traffic model (Company: Ramboll)'

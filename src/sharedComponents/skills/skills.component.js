@@ -14,6 +14,7 @@ class Skills extends Component {
             'Node JS': 5,
             'SEO': 3,
             'Performance Audit': 3,
+            'Jira': 4,
             'Ruby on Rails': 1,
             'C++': 3,
             'AWS': 3,
